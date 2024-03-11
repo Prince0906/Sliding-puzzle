@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #c5f6ef;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    justify-content: center;
+    background-color: white;
+    gap: 2px;
+    border-style: ridge;
+    border-width: 15px;
+    border-color: aqua;
+}
+
+
+.cell {
+    width: 98%;
+    height: 98%;
+    cursor: pointer;
+    border-radius: 10px
+}
+.cell-animation {
+    transition: all 0.5s linear;
+    transition-timing-function: ease;
+}
+@media (max-width: 1024px) { 
+    .grid {
+        grid-template-columns: 125px 125px 125px; 
+        grid-template-rows: 125px 125px 125px; 
+    }
+
+    .cell {
+        width: 98%;
+        height: 98%;
+    }
+}
+@media (max-width: 768px) { 
+    .grid {
+        grid-template-columns: 100px 100px 100px; 
+        grid-template-rows: 100px 100px 100px; 
+    }
+
+    .cell {
+        width: 98%;
+        height: 98%;
+    }
+}
+@media (max-width: 368px) { 
+    .grid {
+        grid-template-columns: 90px 90px 90px; 
+        grid-template-rows: 90px 90px 90px; 
+    }
+
+    .cell {
+        width: 98%;
+        height: 98%;
+    }
+}
+/* Heading Design */
+
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+  
+body {
+    font-family: 'Rocher';
+    text-align: center;
+    font-size: 38px;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 2px 2px black;
+}
+  
+h1 {
+    margin: 0;
+}
+  
+@font-palette-values --Mint {
+    font-family: Rocher;
+    base-palette: 7;
+}
+  
+.mint {
+    font-palette: --Mint;
+}
+
+/* Button Design */
+.btn {
+    font-size: 1.5vw;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    background: rgb(255, 255, 255);
+    color: blueviolet;
+    border-radius: .5rem;
+    border-bottom: 2px solid blueviolet;
+    border-right: 2px solid blueviolet;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    transition-duration: 1s;
+    transition-property: border-top, 
+       border-left, 
+       border-bottom,
+       border-right,
+       box-shadow;
+   }
+   
+   .btn:hover {
+    border-top: 2px solid blueviolet;
+    border-left: 2px solid blueviolet;
+    border-bottom: 2px solid rgb(238, 103, 238);
+    border-right: 2px solid rgb(238, 103, 238);
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+   }
+
+  
